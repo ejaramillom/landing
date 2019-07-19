@@ -1,0 +1,71 @@
+/*style is assigned for headers and paragraphs*/
+h1 {
+    font-family: 'Roboto';font-size: 30px;
+    color: #F5F5F5;
+}
+
+p {
+  font-family: 'Roboto';font-size: 16px;
+  color: #F5F5F5;
+}
+
+
+
+/*background image is assigned to be responsive*/
+
+body {
+    /* image*/
+    background-image:
+    url("https://s3.amazonaws.com/makeitreal/cars/jaguar-xe.jpg");
+
+    /*Center and scale the image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*container style is assigned, 0.5 in the end indicates opacity*/
+  .container {
+    background: rgba(0,0,0,0.5);
+    border-radius: 15px 15px 15px 15px;
+    line-height: 1.6;
+    border: 1px solid #ccc;
+    margin-top: 60px;
+    margin-left: 60px;
+    padding: 20px;
+    max-width: 600px;
+}
+
+/*button is created to have an url assigned, text wont be responsible for redirecting */
+  .button {
+    background-color: #DB3030;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+ /* a href conditions are changed by default*/
+
+a{
+  color:white;
+  text-decoration: none;
+}
+
+/*responsive design is assigned using @media condition and max-width to indicate when to change*/
+
+@media only screen and (max-width: 768px) {
+
+  .container {
+    background: rgba(0,0,0,0.5);
+    line-height: 1.6;
+    border: 1px solid #ccc;
+    margin-top: 60px;
+    margin-left: 60px;
+    padding: 20px;
+    max-width: 600px;
+
+  }
